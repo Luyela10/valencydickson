@@ -4,31 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Valency Luyela</title>
+
+    <!-- bootstrap style sheet -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- css stylesheet -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- icon -->
     <link rel="icon" href="web-development.ico" />
+
+    <!-- google fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
       rel="stylesheet"
     />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/51416ae4aa.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootstrap scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <div class="top-container">
-      <img class="top-clouds" src="clouds.png" alt="cloud-image" />
-      <img class="middle-clouds1" src="cloud.png" alt="cloud-pic" />
-      <h1>I'm Valency.</h1>
-      <p class="p-title">
+    <!-- top container -->
+
+    <div class="container-fluid top-container">
+      <img class="lg-clouds top-clouds" src="clouds.png" alt="cloud-image" />
+      <img class="sm-clouds middle-clouds1" src="cloud.png" alt="cloud-pic" />
+      <h1 class="big-heading">I'm Valency.</h1>
+      <p class="title-text">
         <em> a programmer.</em>
       </p>
-      <img class="middle-clouds2" src="cloud.png" alt="cloud-pic" />
-      <img class="bottom-clouds" src="clouds.png" alt="clouds-image" />
+      <img class="sm-clouds middle-clouds2" src="cloud.png" alt="cloud-pic" />
+      <img
+        class="lg-clouds bottom-clouds"
+        src="clouds.png"
+        alt="clouds-image"
+      />
     </div>
 
-    <div class="middle-container">
+    <!-- middle container -->
+
+    <div class="container-fluid middle-container">
       <div class="profile">
         <img class="profile-pic" src="vale.jpg" alt="profile-pic" />
-        <h2>Hello.</h2>
-        <p class="intro">
+        <h2 class="container-heading">Hello.</h2>
+        <p class="introduction-text">
           I'm a Web designer and GIS analyst based in Dar es Salaam, Tanzania. I
           have love and passion in Web design and development since my
           childhood.
@@ -36,38 +81,38 @@
       </div>
       <hr />
       <div class="skills">
-        <h3>My Skills.</h3>
-        <div class="skill-row">
+        <h3 class="skills-heading">My Skills.</h3>
+        <div class="skills-row">
           <img
-            class="web"
+            class="skills-image web"
             src="https://media.giphy.com/media/QyVZ1BCz9Fh6J0qblM/giphy.gif"
             alt="web pic"
           />
-          <h3>Web design & development</h3>
+          <h3 class="skills-text">Web design & development</h3>
           <p>
             I can design and develop web programs and web application using
             HTML5, CSS3 and JavaScript.
           </p>
         </div>
-        <div class="skill-row">
+        <div class="skills-row">
           <img
-            class="gis"
+            class="skills-image gis"
             src="https://media.giphy.com/media/3ov9jYkVbdGMo6UcG4/giphy.gif"
             alt="gis pic"
           />
-          <h3>GIS Analysis</h3>
+          <h3 class="skills-text">GIS Analysis</h3>
           <p>
             I can analyze spatial data through mapping software and designing
             digital maps with geographic data and various other data sets.
           </p>
         </div>
-        <div class="skill-row">
+        <div class="skills-row">
           <img
-            class="python"
+            class="skills-image python"
             src="https://media.giphy.com/media/2vnId4IaAjIGZd2EWC/giphy.gif"
             alt="python"
           />
-          <h3>Python Development</h3>
+          <h3 class="skills-text">Python Development</h3>
           <p>
             I can design and implement REST APIs in Python, Web apps in Django,
             Web Scraping(scrapy, Selenium, BeautifulSoup) etc.
@@ -76,8 +121,10 @@
       </div>
       <hr />
       <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3 class="freelance">I’m currently available for freelance work.</h3>
+        <h2 class="container-heading">Get In Touch</h2>
+        <h3 class="contact-text">
+          I’m currently available for freelance work.
+        </h3>
         <p class="contact-message">
           If you have a project that you want to get started, think you need my
           help with something or just fancy saying hey, then get in touch.
@@ -88,16 +135,18 @@
     </div>
     <br />
 
-    <div class="bottom-container">
+    <div class="container-fluid bottom-container">
       <a
         class="footer-link"
         href="https://www.linkedin.com/in/dickson-valency-0a7754125/"
-        >LinkedIn</a
-      >
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
       <a class="footer-link" href="https://web.facebook.com/valence.dixon/"
-        >Facebook</a
-      >
-      <a class="footer-link" href="https://twitter.com/Luyela_">Twitter</a>
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      <a class="footer-link" href="https://twitter.com/Luyela_"
+        ><i class="fab fa-twitter"></i
+      ></a>
       <br />
       <p class="copyright">
         © 2020 <u>Valency Dickson</u> All rights reserved.
